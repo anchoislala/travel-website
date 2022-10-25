@@ -1,0 +1,95 @@
+.hero {
+    background-image: url(../images/BGImage.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    flex-grow: 1;
+    padding-top: 270px;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 150px;
+    }
+    // padding-bottom: 200px;
+}
+
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__left {
+    width: 600px;
+    padding-left: 23px;
+    padding-bottom: 40px;
+}
+
+.hero__right {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+}
+
+.hero__image-list {
+    display: flex;
+}
+
+.hero__image-item {
+    &:first-child {
+        position: relative;
+        top: -30px;
+        margin-right: 5px;
+    }
+    &:last-child {
+        position: relative;
+        top: 30px;
+    }
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: #fff;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
+}
+
+.hero__text {
+    color: #fff;
+    letter-spacing: 0.04em;
+    margin-bottom: 20px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
+}
+
+.hero__button {
+    font-family: inherit;
+    font-size: 12px;
+    line-height: 1.33;
+    border: none;
+    border-radius: 25px;
+    background-color: #fff;
+    min-width: 160px;
+    height: 40px;
+    transition: color 300ms linear, background-color 300ms linear;
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        background-color: transparent;
+        border: 2px solid #fff;
+    }
+}
+
+.hero__wave {
+    @media screen and (max-width: 767px) {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+    } 
+}

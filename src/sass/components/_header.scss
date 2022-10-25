@@ -1,0 +1,31 @@
+.header {
+    border-bottom: 1px solid #ececec;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    @media screen and (max-width: 767px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    &__container {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@import './logo';
+@import './site-nav';
